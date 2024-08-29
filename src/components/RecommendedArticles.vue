@@ -2,7 +2,7 @@
   <div class="recommended-articles">
     <h3 class="recommended-title">Articles recommandés</h3>
     <div v-for="article in articles" :key="article.id" class="recommended-article">
-      <div class="article-image">
+      <div class="article-image" @click="navigateToArticle(article.id)">
         <img :src="article.imageUrl" :alt="article.title" />
         <button @click.stop="handleToggleFavorite(article.id)" class="favorite-button">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,13 +75,16 @@ export default {
   display: flex;
   margin-bottom: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 
 .article-image {
   position: relative;
   width: 100px;
   height: 100px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .article-image img {
@@ -103,7 +106,7 @@ export default {
 .favorite-button svg {
   width: 20px;
   height: 20px;
-  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
 .article-content {
@@ -112,6 +115,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 .article-title {

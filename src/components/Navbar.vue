@@ -96,17 +96,17 @@ export default {
 
 @media (max-width: 768px) {
   .navbar-content {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 1rem;
   }
 
   .navbar-brand {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .navbar-links {
-    width: 100%;
-    justify-content: space-between;
+    gap: 1rem;
   }
 }
 </style>
