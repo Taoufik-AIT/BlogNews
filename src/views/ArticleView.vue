@@ -93,14 +93,13 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .article-container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 1rem;
+  gap: 1.5rem;
 }
 
 .article {
@@ -115,7 +114,8 @@ export default {
 
 .article-image {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
 }
 
@@ -182,9 +182,16 @@ export default {
   text-align: left;
 }
 
+@media (max-width: 1024px) {
+  .article-container {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .article-container {
     flex-direction: column;
+    padding: 0.5rem;
   }
 
   .recommended-section {
@@ -201,6 +208,12 @@ export default {
 
   .author-image {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+    padding: 0.25rem;
   }
 }
 </style>

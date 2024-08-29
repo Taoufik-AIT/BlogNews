@@ -16,7 +16,7 @@
   
   <style scoped>
   .hero-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@/assets/img/img-7.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@/assets/img/img-22.png');
     background-size: cover;
     background-position: center;
     height: 60vh;

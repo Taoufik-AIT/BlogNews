@@ -94,5 +94,9 @@ export default {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  
+  .favorites-title {
+    text-align: left;
+  }
 }
 </style>

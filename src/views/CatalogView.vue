@@ -131,6 +131,10 @@ export default {
 }
 
 @media (max-width: 1024px) {
+  .catalog {
+    padding: 1.5rem;
+  }
+
   .article-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -139,6 +143,8 @@ export default {
 @media (max-width: 768px) {
   .catalog {
     padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .catalog-header {
@@ -153,13 +159,37 @@ export default {
     width: 100%;
   }
 
-  .article-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .search-bar {
+    flex-grow: 1;
+    margin-right: 0.5rem;
   }
 
   .sort-component {
     width: auto;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    padding: 0.5rem;
+  }
+
+  .catalog-controls {
+    flex-wrap: nowrap;
+  }
+
+  .search-bar {
+    flex-grow: 1;
+    min-width: 0; /* Permet à la barre de recherche de rétrécir si nécessaire */
+  }
+
+  .sort-component {
+    flex-shrink: 0; /* Empêche le composant de tri de rétrécir */
   }
 }
 </style>
