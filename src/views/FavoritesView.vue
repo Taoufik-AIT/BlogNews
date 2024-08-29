@@ -81,6 +81,7 @@ export default {
   text-align: center;
   padding: 2rem;
   background-color: #f8f8f8;
+  border-radius: 8px;
   margin-top: 2rem;
 }
 
@@ -92,46 +93,6 @@ export default {
   .article-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .article-grid ::v-deep .article-card {
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-  }
-
-  .article-grid ::v-deep .article-image {
-    width: 120px;
-    height: 120px;
-    padding-top: 0;
-    position: relative;
-  }
-
-  .article-grid ::v-deep .favorite-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
-
-  .article-grid ::v-deep .article-content {
-    flex: 1;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .article-grid ::v-deep .article-title {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .article-grid ::v-deep .article-excerpt {
-    display: none;
-  }
-
-  .article-grid ::v-deep .article-meta {
-    margin-top: auto;
   }
 }
 </style>

@@ -29,7 +29,6 @@
 </template>
 
 <script>
-// Le script reste inchangé
 import { computed } from 'vue';
 import { useArticles } from '@/composables/useArticles';
 
@@ -112,7 +111,7 @@ export default {
 }
 
 .article-content {
-  padding: 0;
+  padding: 10px;
   text-align: left;
 }
 
@@ -204,7 +203,8 @@ export default {
   }
 
   .favorite-button {
-    display: none;
+    top: 5px;
+    right: 5px;
   }
 }
 </style>

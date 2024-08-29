@@ -109,11 +109,13 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .catalog-controls {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .article-grid {
@@ -145,14 +147,15 @@ export default {
   }
 
   .catalog-controls {
-    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
   }
 
   .article-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .sort-component {
