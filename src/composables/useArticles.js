@@ -1,5 +1,7 @@
 import { ref, computed, watch } from "vue";
 
+// Système de gestion d'articles avec filtrage, tri, pagination et favoris pour un blog ou site d'actualités
+
 const originalArticles = [
   { id: 1, title: "The Future of AI in Web Development", description: "Exploring how artificial intelligence is reshaping the landscape of web development and its implications for developers.", imageUrl: "https://picsum.photos/id/1/400/300", authorImage: "assets/img/img-1.png", author: "Amélie Laurent", date: "2024-01-20", category: "Technology" },
   { id: 2, title: "Designing for Accessibility: Best Practices", description: "A comprehensive guide to creating inclusive web designs that cater to users of all abilities.", imageUrl: "https://picsum.photos/id/2/400/300", authorImage: "assets/img/img-2.png", author: "Ricardo Baker", date: "2024-01-15", category: "Design" },
